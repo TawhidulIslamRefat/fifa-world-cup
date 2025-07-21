@@ -1,11 +1,258 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-.poppins{
+.poppins {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+/* shered styles */
+.container {
+  max-width: 1414px;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  font-size: 1.2rem;
+  background-color: #dd0000;
+  padding: 16px 26px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* header-section styles */
+header {
+  background-color: #161616;
+  border-radius: 30px;
+  
+}
+
+.bannar > i{
+     color:rgba(255, 255, 255, 0.7);
+}
+.banner-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: #ffffff;
+}
+.banner-discription {
+  line-height: 26px;
+  color: rgb(158, 157, 157);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+.banner-content {
+  padding: 111px 80px 111px 125px;
+}
+.banner-pic {
+  
+  display: block;
+  padding-top: 40px;
+  padding-right: 17px;
+}
+
+/* upcoming-matchs styles */
+.upciming-matchs{
+display: flex;
+gap: 56px;
+margin-bottom: 130px;
+}
+
+.upcoming-m-left{
+background-color: #161616;
+display: flex;
+flex-direction:column;
+gap:30px;
+padding: 30px 30px;
+border-radius: 10px;
+ height: fit-content;
+}
+.primary-btn:nth-child(1),
+.primary-btn:nth-child(2){
+    background-color: #ffffff;
+    color: #161616;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.upcoming-m-right{
+display: 75%;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 56px;
+}
+
+/* card styles */
+.card-image{
+max-width:100%;
+border-radius: 7px 7px 0px 0px ;
+   
+}
+.card-button{
+    font-weight: 500;
+    padding: 4px 16px;
+    border-radius: 5px;
+    border: 1px solid #2b2b2b;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+       color:rgba(150, 148, 148, 0.7);
+}
+ .icon > i{
+    padding-bottom: 20px;
+  
+ }  
+
+
+.card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #16161621;
+    border-radius: 7px;
+}
+
+/* footer sectiion styles */
+.footer{
+    background-color: #161616;
+}
+.footer-title{
+    font-size: 2.5rem;
+    font-weight:600;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 130px;
+    /* border-bottom: 1px solid #ffffff9c; */
+}
+nav > ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 50px;
+ padding-bottom: 130px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #B9B9B9;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:576px){
+  .cards{
+  grid-template-columns:1fr;
+}
+  .upciming-matchs{
+display: flex;
+flex-direction: column;
+gap: 56px;
+margin-bottom: 130px;
+}
+.banner{
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 20px 80px 20px;
+}
+.upcoming-m-left{
+background-color:white}
+.banner-content {
+  padding: 0;
+}
+.primary-btn:nth-child(1),
+.primary-btn:nth-child(2){
+    background-color: #ffffff;
+    color: #161616;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 4px 0px 10px rgb(230, 229, 229);
+}
+nav > ul{
+  flex-wrap: wrap;
+}
+.banner-pic {
+  max-width: 100%;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 20px 80px 20px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+.upcoming-m-left,.cards{
+
+margin: 0px 15px;
+
+}
+
+
+}
+
+
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .upciming-matchs{
+display: flex;
+flex-direction: column;
+gap: 56px;
+margin-bottom: 130px;
+}
+.cards{
+  grid-template-columns: repeat(2,1fr);
+}
+.upcoming-m-left,.cards{
+
+margin: 0px 15px;
+
+}
+.banner{
+  margin-left:20px;
+}
+nav > ul{
+  flex-wrap: wrap;
+}
+.primary-btn:nth-child(1),
+.primary-btn:nth-child(2){
+    background-color: #ffffff;
+    color: #161616;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 4px 0px 10px rgb(230, 229, 229);
+}
+
+}
+
